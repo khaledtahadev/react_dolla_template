@@ -98,9 +98,12 @@ export const NavLink = styled(LinkS).attrs(props => ({
 		font-size: 1.2rem;
 	}
 
-	&.active {
-		border-bottom: 3px solid #01bf71;
+	@media(min-width: 768px){
+		&.active {
+			border-bottom: 3px solid #01bf71;
+		}
 	}
+
 	&:hover {
 		color: #01bf71;
 		transition: 0.2s ease-in-out;
